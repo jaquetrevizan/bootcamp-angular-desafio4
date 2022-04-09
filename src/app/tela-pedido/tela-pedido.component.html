@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  <p>Pedido</p>
+</mat-toolbar>
+
+<mat-list>
+  <ng-container *ngFor="let item of pedidoService.itens">
+    <mat-list-item>
+      <span class="flex-1">{{ item.produto.descricao }}</span>
+      <span
+        >{{ item.quantidade }} &times;
+        {{ item.produto.preco | currency: "BRL" }}</span
+      >
+    </mat-list-item>
+  </ng-container>
+  <mat-list-item *ngIf="pedidoService.getQuantidade() != 0">
+    <span class="flex-1"><strong>Total: </strong></span>
+    <span>{{ pedidoService.getPrecoTotal() | currency: "BRL" }}</span>
+  </mat-list-item>
+  <mat-list-item *ngIf="pedidoService.getQuantidade() == 0">
+    <p>Seu pedido está vazio</p>
+  </mat-list-item>
+</mat-list>
+
+<mat-toolbar class="space-between">
+  <a mat-raised-button routerLink="/cardapio">Adicionar mais itens</a>
+  <button mat-raised-button (click)="pedidoService.limpa()">Limpar</button>
+  <button mat-raised-button color="accent">Concluir</button>
+</mat-toolbar>
