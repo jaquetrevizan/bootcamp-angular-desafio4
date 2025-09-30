@@ -1,27 +1,55 @@
-# Bootcamp Angular Desafio 4 | NgFood (Pedido de comida)
+<h1 align="center"> Bootcamp Angular — Desafio 4: NgFood</h1>
+<p align="center">Aplicação Angular desenvolvida durante o bootcamp simulando pedidos de comida.</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.2.4.
+---
 
-## Development server
+## Objetivo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Este desafio teve como objetivo consolidar conceitos de **Angular 10**, **Angular Material** e **RxJS**, aplicados a um sistema de pedidos de comida chamado **NgFood**.
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Tecnologias Utilizadas
 
-## Build
+- [Angular 10](https://angular.io/) — Framework frontend.  
+- [Angular Material](https://material.angular.io/) — Biblioteca de componentes UI.  
+- [RxJS](https://rxjs.dev/) — Programação reativa.  
+- [TypeScript](https://www.typescriptlang.org/) — Linguagem base.  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+---
 
-## Running unit tests
+## Instalação e Execução
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+# Clone o repositório
+git clone https://github.com/jaquetrevizan/bootcamp-angular-desafio4.git
 
-## Running end-to-end tests
+# Acesse o diretório
+cd bootcamp-angular-desafio4
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Instale as dependências
+npm install
 
-## Further help
+# Execute a aplicação
+ng serve
+````
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+A aplicação ficará disponível em `http://localhost:4200/`.
+
+---
+
+## Aprendizados
+
+Durante este desafio foi possível praticar:
+
+* Criação de componentes com **Angular 10**.
+* Integração de **Angular Material** em layouts.
+* Gerenciamento de estado simples usando **RxJS**.
+* Estruturação de um sistema de pedidos simulados.
+
+---
+
+## Dúvidas & Sugestões
+
+- Se tiver alguma ideia para melhorar este projeto ou encontrar algum problema, fique à vontade para abrir uma issue aqui no repositório.
+- Para dúvidas mais diretas, você também pode me escrever em: trevizan.jaqueline@gmail.com.
